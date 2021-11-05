@@ -22,7 +22,7 @@ public class SQLAnimalRepository implements AnimalRepository{
 
     @Override
     public Animal findById(Long id) {
-        return SQLAnimalEntity.findById(id);
+        return animalPanacheRepository.findById(id);
     }
 
     @Override

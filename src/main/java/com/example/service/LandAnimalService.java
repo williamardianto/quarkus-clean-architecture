@@ -23,4 +23,11 @@ public class LandAnimalService implements AnimalService {
     public List<Animal> getTwoLegsAnimals() {
         return animalRepository.list();
     }
+
+    @Override
+    public Animal findById(Long id) {
+        return animalRepository.findById(id);
+    }
+
+
 }

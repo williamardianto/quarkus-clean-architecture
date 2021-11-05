@@ -30,4 +30,11 @@ public class LandAnimalResource {
     public Response list() {
         return Response.ok(landAnimalService.getTwoLegsAnimals()).build();
     }
+
+    @GET
+    @Path("/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response get(@PathParam("id") Long id) {
+        return Response.ok(landAnimalService.findById(id)).build();
+    }
 }

@@ -8,4 +8,5 @@ import java.util.List;
 public interface AnimalService {
     Animal create(AnimalDTO animalDTO);
     List<Animal> getTwoLegsAnimals();
+    Animal findById(Long id);
 }

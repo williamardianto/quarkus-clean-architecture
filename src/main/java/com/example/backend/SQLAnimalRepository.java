@@ -8,10 +8,9 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @ApplicationScoped
-public class SQLAnimalRepository implements AnimalRepository{
+public class SQLAnimalRepository implements AnimalRepository {
     @Inject
     AnimalPanacheRepository animalPanacheRepository;
 

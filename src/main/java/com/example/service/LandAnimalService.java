@@ -3,11 +3,9 @@ package com.example.service;
 import com.example.backend.SQLAnimalRepository;
 import com.example.core.dto.AnimalDTO;
 import com.example.core.entity.Animal;
-import com.example.core.repository.AnimalRepository;
 import com.example.core.service.AnimalService;
 
 import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
 import java.util.List;
 
 @ApplicationScoped

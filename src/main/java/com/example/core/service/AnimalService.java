@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface AnimalService {
     Animal create(AnimalDTO animalDTO);
-    List<Animal> getTwoLegsAnimals();
+    List<? extends Animal> getTwoLegsAnimals();
     Animal findById(Long id);
 }

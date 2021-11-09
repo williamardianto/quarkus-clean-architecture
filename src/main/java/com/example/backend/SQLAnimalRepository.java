@@ -16,8 +16,8 @@ public class SQLAnimalRepository implements AnimalRepository{
     AnimalPanacheRepository animalPanacheRepository;
 
     @Override
-    public List<Animal> list() {
-        return animalPanacheRepository.listAll().stream().map(x -> (Animal)x).collect(Collectors.toList());
+    public List<? extends Animal> list() {
+        return animalPanacheRepository.listAll();
     }
 
     @Override

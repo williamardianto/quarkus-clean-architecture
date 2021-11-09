@@ -6,7 +6,7 @@ import com.example.core.entity.Animal;
 import java.util.List;
 
 public interface AnimalRepository {
-    List<Animal> list();
+    List<? extends Animal> list();
 
     Animal findById(Long id);
 
